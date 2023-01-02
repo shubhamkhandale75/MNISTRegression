@@ -6,8 +6,8 @@ served as the basis for benchmarking classification algorithms. As new machine l
 techniques emerge, MNIST remains a reliable resource for researchers and learners alike.
 (https://en.wikipedia.org/wiki/MNIST_database).
 
-#####Part 1:
-Part 1: Find a least-squares binary classifier for handwritten MNIST digit set, i.e. determine if
+##### Part 1:
+Find a least-squares binary classifier for handwritten MNIST digit set, i.e. determine if
 an image 𝑥 is a digit 𝑘 or not digit 𝑘. Pick a digit you like. First, extract the indices of all digit’s
 with label 𝑘 and randomly separate the samples into equal-sized training and testing groups.
 Second, do the same for the digits that are not labeled 𝑘. Use label 𝑦$ = 1 if 𝑥$ is digit 𝑘 and 𝑦$ =
@@ -21,13 +21,15 @@ Fitted”, “Normal Q-Q”, “Scale-Location”, and “Residuals vs Leverage�
 (https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/plot.lm). Briefly describe
 what you have observed.
 
-#####Part 2: Repeat the above problem for all pairs of digits. For each pair of digits, report the
+##### Part 2: 
+Repeat the above problem for all pairs of digits. For each pair of digits, report the
 classification error rates for the training and testing sets. The error rates can be formatted nicely
 into a triangular matrix. For storage and display efficiency, store the testing error in the lower
 triangle and the training error in the upper triangle. Display 𝛽 and 𝛽) as a 2D images for pairs
 with lowest and highest error rates.
 
-#####Part 3: Use logistic regression and compare your results with Parts 1 and 2.
+##### Part 3:
+ Use logistic regression and compare your results with Parts 1 and 2.
 Part 4: Test for outliers in each group of 10 digits using Cook’s distance. Visualize the ‘mean’
 and identified outliers for each digit. Repeat Parts 1 - 3 with outliers removed
 
